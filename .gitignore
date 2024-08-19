@@ -1,0 +1,73 @@
+# Python bytecode files
+*.pyc
+*.pyo
+*.pyd
+__pycache__/
+
+# Django specific
+*.log
+*.pot
+*.pyc
+*.pyo
+*.pyd
+__pycache__/
+db.sqlite3
+media/
+staticfiles/
+
+# Environment variables
+.env
+
+# Virtual environment
+venv/
+env/
+ENV/
+.venv/
+
+# Mac OS X specific
+.DS_Store
+
+# Windows specific
+Thumbs.db
+Desktop.ini
+
+# IDE-specific files
+.vscode/
+.idea/
+
+# Coverage reports
+coverage.xml
+*.cover
+*.py,cover
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# MyPy
+.mypy_cache/
+
+# Pyre type checker
+.pyre/
+
+# Pylint
+.pylint.d/
+
+# Flake8
+.flake8
+
+# Black
+*.black
+
+# Django migrations
+migrations/
+
+# Docker specific
+docker-compose.override.yml
+*.dockerfile
+.docker/
+
+# Miscellaneous
+*.bak
+*.swp
+
+myenv/
