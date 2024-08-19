@@ -11,6 +11,7 @@ https://docs.djangoproject.com/en/5.1/ref/settings/
 """
 
 from pathlib import Path
+import os
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -23,9 +24,9 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-e%o=y9=xpxm1ejq*oaf(@&y&54o0-2z$_%cg8z87l+qctl-hyb'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
-ALLOWED_HOSTS = ["pharmacy-be.onrender.com",'https://pharmacy-be.onrender.com']
+ALLOWED_HOSTS = ["pharmacy-be.onrender.com",'127.0.0.1']
 CSRF_TRUSTED_ORIGINS = [
     'https://pharmacy-be.onrender.com',
     # Add other trusted origins as needed
@@ -45,6 +46,9 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'supplements'
 ]
+
+STATIC_URL = '/static/'
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
