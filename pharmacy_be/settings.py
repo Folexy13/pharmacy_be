@@ -84,11 +84,11 @@ DATABASES = {
     'default': {
         # 'ENGINE': 'django.db.backends.sqlite3',
         # 'NAME': BASE_DIR / 'db.sqlite3',
-        "ENGINE": "django.db.backends.mysql",
-        "NAME": "bluemoon",
-        "USER": "hakeem",
-        "PASSWORD": "rexonance",
-        "HOST": "localhost",
+        "ENGINE":  'django.db.backends.postgresql',
+        "NAME": "verceldb",
+        "USER": "default",
+        "PASSWORD": "CYJ7uvnw3Xma",
+        "HOST": "ep-jolly-glade-04413070-pooler.us-east-1.aws.neon.tech",
         "PORT": 3306,
     }
 }
