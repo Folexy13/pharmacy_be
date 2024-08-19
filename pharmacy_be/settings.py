@@ -25,7 +25,12 @@ SECRET_KEY = 'django-insecure-e%o=y9=xpxm1ejq*oaf(@&y&54o0-2z$_%cg8z87l+qctl-hyb
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ["pharmacy-be.onrender.com"]
+ALLOWED_HOSTS = ["pharmacy-be.onrender.com",'https://pharmacy-be.onrender.com']
+CSRF_TRUSTED_ORIGINS = [
+    'https://pharmacy-be.onrender.com',
+    # Add other trusted origins as needed
+]
+
 MEDIA_URL = '/media/'
 MEDIA_ROOT = BASE_DIR / 'media'
 
