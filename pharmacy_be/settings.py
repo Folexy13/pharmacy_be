@@ -89,7 +89,7 @@ DATABASES = {
         "USER": "default",
         "PASSWORD": "CYJ7uvnw3Xma",
         "HOST": "ep-jolly-glade-04413070-pooler.us-east-1.aws.neon.tech",
-        "PORT": 3306,
+        "PORT": 5432,
     }
 }
 
